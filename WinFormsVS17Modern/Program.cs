@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WinFormsVS17Modern.Views.Login;
+using WinFormsVS17Modern.Views.Principal;
 
 namespace WinFormsVS17Modern
 {
@@ -16,7 +18,7 @@ namespace WinFormsVS17Modern
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormLogin());
         }
     }
 }

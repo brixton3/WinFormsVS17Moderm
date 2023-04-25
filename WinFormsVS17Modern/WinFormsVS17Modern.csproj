@@ -13,6 +13,22 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\1 Prueba SGE2023\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,18 +49,33 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>1AF6B4511F0DCBAEF1EAEAA7EC3EE14665C36A34</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>WinFormsVS17Modern_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BrixComponente">
+      <HintPath>D:\1 Librerias Csharp\BrixComponente.dll</HintPath>
+    </Reference>
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.6.3.0\lib\net48\FontAwesome.Sharp.dll</HintPath>
     </Reference>
-    <Reference Include="FontAwesome.Sharp.Pro, Version=6.3.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
-      <HintPath>..\packages\FontAwesome.Sharp.Pro.6.3.0\lib\net48\FontAwesome.Sharp.Pro.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RJCodeAdvance.RJControls.1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -71,6 +102,66 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Bandejas\Frm_BandejaME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Bandejas\Frm_BandejaME.Designer.cs">
+      <DependentUpon>Frm_BandejaME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Bandejas\Frm_BandejaRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Bandejas\Frm_BandejaRE.Designer.cs">
+      <DependentUpon>Frm_BandejaRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Configuracion\Frm_Conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Configuracion\Frm_Conf.Designer.cs">
+      <DependentUpon>Frm_Conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Login\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\NewExpediente\FormNewExpediente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\NewExpediente\FormNewExpediente.Designer.cs">
+      <DependentUpon>FormNewExpediente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Principal\FormBusquedasME.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Principal\FormBusquedasME.Designer.cs">
+      <DependentUpon>FormBusquedasME.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Principal\FormBusquedasRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Principal\FormBusquedasRE.Designer.cs">
+      <DependentUpon>FormBusquedasRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Principal\FormRechazados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Principal\FormRechazados.Designer.cs">
+      <DependentUpon>FormRechazados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Principal\NewPrincipalModerno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Principal\NewPrincipalModerno.Designer.cs">
+      <DependentUpon>NewPrincipalModerno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pruebas\FormPrueba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Pruebas\FormPrueba.Designer.cs">
+      <DependentUpon>FormPrueba.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -84,6 +175,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Views\Bandejas\Frm_BandejaME.resx">
+      <DependentUpon>Frm_BandejaME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Bandejas\Frm_BandejaRE.resx">
+      <DependentUpon>Frm_BandejaRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Configuracion\Frm_Conf.resx">
+      <DependentUpon>Frm_Conf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Login\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\NewExpediente\FormNewExpediente.resx">
+      <DependentUpon>FormNewExpediente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Principal\FormBusquedasME.resx">
+      <DependentUpon>FormBusquedasME.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Principal\FormBusquedasRE.resx">
+      <DependentUpon>FormBusquedasRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Principal\FormRechazados.resx">
+      <DependentUpon>FormRechazados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Principal\NewPrincipalModerno.resx">
+      <DependentUpon>NewPrincipalModerno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Pruebas\FormPrueba.resx">
+      <DependentUpon>FormPrueba.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -94,9 +215,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="WinFormsVS17Modern_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
