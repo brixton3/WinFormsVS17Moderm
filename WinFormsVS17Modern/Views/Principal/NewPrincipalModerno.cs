@@ -66,7 +66,7 @@ namespace WinFormsVS17Modern.Views.Principal
 
         private void NewPrincipalModerno_Paint(object sender, PaintEventArgs e)
         {
-
+            //add
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
